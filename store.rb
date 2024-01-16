@@ -46,6 +46,7 @@ class Store
   def list_yarns
     if @yarns.empty?
       "No yarn in your cart yet."
+    end
     else
       puts "Yarns in your cart:"
       @yarns.each do |yarn|
