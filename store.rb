@@ -5,7 +5,7 @@ class Store
     @yarns = []
   end
 
-  def run
+  def open
     loop do
       puts "\n"
       puts "Welcome to the Yarn Store CLI!"
