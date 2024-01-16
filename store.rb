@@ -22,7 +22,9 @@ class Store
       when 2
         list_yarns
       when 3
-        puts "Thank you for visiting the Yarn Store CLI. Happy crafting!"
+        puts "Thank you for visiting the Yarn Store CLI. You have purchased:\n"
+        list_yarns
+        puts "Happy crafting!\n"
         break
       else
         puts "Sorry, I don't understand this input. Please select another option."
