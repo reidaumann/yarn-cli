@@ -2,7 +2,7 @@ require_relative "yarn"
 
 class Store
   def initialize
-    @cart = []
+    @yarns = []
   end
 
   def run
