@@ -43,14 +43,13 @@ class Store
     puts "Yarn added to cart!"
   end
 
-  def list_yarns
+  def list_yarns()
     if @yarns.empty?
-      "No yarn in your cart yet."
-    end
+      "There is no yarn in your cart currently."
     else
-      puts "Yarns in your cart:"
       @yarns.each do |yarn|
-        puts yarn
+        puts yarn.to_s
+      end
     end
   end
 end
