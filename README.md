@@ -1,5 +1,6 @@
-# ruby-cli-template
+# yarn-CLI
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
+A command line interface app to simulate buying yarn at a store.
 
-- Ruby version: `3.2.1`
+## Use It
+Run `ruby app.rb` in the terminal
