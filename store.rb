@@ -50,5 +50,6 @@ class Store
       puts "Yarns in your cart:"
       @yarns.each do |yarn|
         puts yarn
+    end
   end
 end
