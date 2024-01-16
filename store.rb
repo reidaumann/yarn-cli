@@ -33,7 +33,7 @@ class Store
   private
 
   def add_yarn
-    print "Enter yarn fiber: "
+    print "Enter yarn fiber (acrylic, cotton, wool, etc.): "
     fiber = gets.chomp
     print "Enter yarn color: "
     color = gets.chomp
