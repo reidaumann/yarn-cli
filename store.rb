@@ -44,9 +44,12 @@ class Store
   end
 
   def list_yarns
-    puts "Yarns in your cart:"
-    @yarns.each do |yarn|
-      puts yarn
-    end
+    if @cars.empty?
+      "No cars at the moment."
+    else
+      puts "Yarns in your cart:"
+      @yarns.each do |yarn|
+        puts yarn
+      end
   end
 end
