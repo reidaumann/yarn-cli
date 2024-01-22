@@ -1,6 +1,8 @@
 require_relative "yarn"
 
 class Store
+  public 
+  
   def initialize
     @yarns = []
   end
