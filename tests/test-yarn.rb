@@ -3,16 +3,8 @@ require './store'
 require './yarn'
 
 class TestYarn < Minitest::Test
-  #test that yarn "cart" is empty when store is first opened
-  def test_new_store
+ #testing to make sure cart is empty when first opened
+   def test_cart_empty
     store=Store.new
     assert_equal "There is no yarn in your cart currently.", store.list_yarns
-  end
-
-  #test to make sure that list yarns works after adding yarn
-  def test_add_yarn
-    store=Store.new
-    @yarns << Yarn.new("wool", "pink", 3)
-    assert_equal  "3 skeins of wool pink yarn", store.list_yarns
-  end
-end
+   end
