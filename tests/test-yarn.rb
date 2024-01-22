@@ -7,4 +7,6 @@ class TestYarn < Minitest::Test
     assert_equal "There is no yarn in your cart currently.", store.list_yarns
   end
 
+  def test_add_yarn
+    assert_equal "Yarn added to cart!", store.add_yarn
 end
