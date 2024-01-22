@@ -12,7 +12,7 @@ class TestYarn < Minitest::Test
   #test to make sure that list yarns works after adding yarn
   def test_add_yarn
     store=Store.new
-    @yarns << Yarn.new(wool, pink, 3)
+    @yarns << Yarn.new("wool", "pink", 3)
     assert_equal  "3 skeins of wool pink yarn", store.list_yarns
   end
 end
