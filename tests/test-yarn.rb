@@ -12,6 +12,6 @@ class TestYarn < Minitest::Test
   def test_add_yarn
     store=Store.new
     store.add_yarn
-    assert (store.list_yarns, msg=nil)
+    assert_equal "#{@number} skeins of #{@color} #{@fiber} yarn", store.list_yarns
   end
 end
