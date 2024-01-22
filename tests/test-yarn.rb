@@ -2,8 +2,6 @@ require 'minitest/autorun'
 require './store'
 
 class TestYarn < Minitest::Test
-  def test_add_yarn
-    store = Store.new
-    assert store.add_yarn != nil
-  end
+  store=Store.new
+  assert_equal store, @yarns = []
 end
