@@ -9,4 +9,5 @@ class TestYarn < Minitest::Test
 
   def test_add_yarn
     assert_equal "Yarn added to cart!", store.add_yarn
+  end
 end
