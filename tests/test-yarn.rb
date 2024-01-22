@@ -8,3 +8,4 @@ class TestYarn < Minitest::Test
     store=Store.new
     assert_equal "There is no yarn in your cart currently.", store.list_yarns
    end
+  end
