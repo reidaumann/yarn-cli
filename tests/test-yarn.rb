@@ -12,6 +12,6 @@ class TestYarn < Minitest::Test
   def test_add_yarn
     store=Store.new
     #store.add_yarn
-    assert store.list_yarns
+    assert (store.list_yarns, msg=nil)
   end
 end
