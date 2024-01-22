@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require './store'
+require './yarn'
 
 class TestYarn < Minitest::Test
   #test that yarn "cart" is empty when store is first opened
