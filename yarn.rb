@@ -1,6 +1,7 @@
 class Yarn
   attr_accessor :fiber, :color, :number
-
+  public
+  
   def initialize(fiber, color, number)
     @fiber = fiber
     @color = color
