@@ -12,7 +12,7 @@ class TestYarn < Minitest::Test
   #test to make sure that adding yarn to "cart" works
   def test_add_yarn
     store=Store.new
-    store.add_yarn
+    store.add_yarns
     assert_equal yarn.to_s, store.list_yarns
   end
 end
