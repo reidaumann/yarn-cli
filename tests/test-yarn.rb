@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative "store"
+require './store'
 
 class TestYarn < Minitest::Test
   def test_add_yarn
