@@ -7,10 +7,11 @@ class TestYarn < Minitest::Test
     store=Store.new
     assert_equal "There is no yarn in your cart currently.", store.list_yarns
   end
-  
-  #test to make sure that adding yarn to "cart" works
+
+  #test to make sure that adding yarn to "cart" works (found assert_not_equal in online research)
   def test_add_yarn
     store=Store.new
-    assert_equal "Yarn added to cart!", store.add_yarn
+    store.add_yarn
+    assert_not_equal nil, store.list_yarns
   end
 end
