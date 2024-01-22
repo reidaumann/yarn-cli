@@ -2,7 +2,7 @@ require_relative "yarn"
 
 class Store
   public 
-  
+
   def initialize
     @yarns = []
   end
@@ -34,26 +34,24 @@ class Store
     end
   end
 
-  private
+    def add_yarn
+      print "Enter yarn fiber (acrylic, cotton, wool, etc.): "
+      fiber = gets.chomp
+      print "Enter yarn color: "
+      color = gets.chomp
+      print "Enter the number of skeins you want: "
+      number = gets.chomp
+      @yarns << Yarn.new(fiber, color, number)
+      puts "Yarn added to cart!"
+    end
 
-  def add_yarn
-    print "Enter yarn fiber (acrylic, cotton, wool, etc.): "
-    fiber = gets.chomp
-    print "Enter yarn color: "
-    color = gets.chomp
-    print "Enter the number of skeins you want: "
-    number = gets.chomp
-    @yarns << Yarn.new(fiber, color, number)
-    puts "Yarn added to cart!"
-  end
-
-  def list_yarns()
-    if @yarns.empty?
-      "There is no yarn in your cart currently."
-    else
-      @yarns.each do |yarn|
-        puts yarn.to_s
+    def list_yarns()
+      if @yarns.empty?
+        "There is no yarn in your cart currently."
+      else
+        @yarns.each do |yarn|
+          puts yarn.to_s
+        end
       end
     end
-  end
 end
